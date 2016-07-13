@@ -94,6 +94,7 @@ alias g++11="g++ -std=c++11"
 alias tmux2="tmux -2"
 alias vimx="vim '+set t_ut='"
 alias zsrc='source /home/sushant/.zshrc'
+alias axe='axel -n30 -a'
 
 #.dircolors.ansi-dark
 #.dircolors.ansi-dark
