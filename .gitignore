@@ -4,6 +4,8 @@
 !.zshrc
 !.bashrc
 !.dircolor*
-!.vim
-!base16-builder
-!base16-gnome-terminal
+!.vim/
+!.vim/*
+!.vim/autoload/*
+!.vim/bundle/*
+!.vimrc
