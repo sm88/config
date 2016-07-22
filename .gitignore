@@ -4,8 +4,4 @@
 !.zshrc
 !.bashrc
 !.dircolor*
-!.vim/
-!.vim/*
-!.vim/autoload/*
-!.vim/bundle/*
 !.vimrc
