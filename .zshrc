@@ -99,7 +99,7 @@ alias axe='axel -n30 -a'
 #.dircolors.ansi-dark
 #.dircolors.ansi-dark
 eval `dircolors ~/.dircolors.monokai`
-LS_COLORS=$LS_COLORS:'ow=0;34:di=0;34'; export LS_COLORS
+#LS_COLORS=$LS_COLORS:'ow=0;34:di=0;34'; export LS_COLORS
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 autoload -Uz compinit
 compinit
