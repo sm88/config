@@ -53,7 +53,7 @@ fi
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git debian common-aliases)
+plugins=(git debian common-aliases sublime vi-mode)
 
 # User configuration
 
@@ -95,6 +95,7 @@ alias tmux2="tmux -2"
 alias vimx="vim '+set t_ut='"
 alias zsrc='source /home/sushant/.zshrc'
 alias axe='axel -n30 -a'
+alias PUB='git add .; gcmsg "routine push"; ggpush'
 
 #.dircolors.ansi-dark
 #.dircolors.ansi-dark
