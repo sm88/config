@@ -1,5 +1,6 @@
 [global_config]
   geometry_hinting = False
+  focus = system
 [keybindings]
   split_horiz = <Primary><Shift>o
   switch_to_tab_6 = <Alt>6
