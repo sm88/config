@@ -1,7 +1,18 @@
-*
-!.gitignore
-!login.sh
-!.zshrc
-!.bashrc
-!.dircolor*
-!.vimrc
+.*
+android
+base16-gnome-terminal
+base16-builder
+Desktop
+Documents
+Downloads
+ftpmnt
+Music
+netbeans-8.1
+nltk_data
+programs
+Public
+Recordings
+Steam
+Templates
+VirtualBox VMs
+workspace

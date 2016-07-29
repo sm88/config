@@ -1,0 +1,60 @@
+[global_config]
+  geometry_hinting = False
+[keybindings]
+  split_horiz = <Primary><Shift>o
+  switch_to_tab_6 = <Alt>6
+  switch_to_tab_7 = <Alt>7
+  switch_to_tab_4 = <Alt>4
+  switch_to_tab_5 = <Alt>5
+  split_vert = <Primary><Shift>e
+  switch_to_tab_3 = <Alt>3
+  switch_to_tab_1 = <Alt>1
+  switch_to_tab_2 = <Alt>2
+  hide_window = F12
+  switch_to_tab_8 = <Alt>8
+  switch_to_tab_9 = <Alt>9
+[profiles]
+  [[default]]
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#ffffff:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    background_image = None
+    background_darkness = 0.9
+    background_type = transparent
+    use_system_font = False
+    cursor_color = "#90908f"
+    foreground_color = "#92ac03"
+    show_titlebar = False
+    cursor_shape = underline
+    font = DejaVu Sans Mono for Powerline 13
+  [[dropdown]]
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#ffffff:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    background_image = None
+    background_darkness = 0.9
+    background_type = transparent
+    use_system_font = False
+    cursor_color = "#90908f"
+    foreground_color = "#92ac03"
+    show_titlebar = False
+    cursor_shape = underline
+    font = DejaVu Sans Mono for Powerline 13
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+  [[dropdown]]
+    [[[child0]]]
+      position = 9:25
+      type = Window
+      order = 0
+      parent = ""
+      size = 1366, 562
+    [[[terminal1]]]
+      profile = default
+      type = Terminal
+      order = 0
+      parent = child0
+[plugins]
