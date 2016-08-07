@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-export TERM="xterm-256color"
+export TERM="xterm-color"
 ZSH_THEME="sushant"
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] || [ "$TERM" = "linux" ]; then
 	ZSH_THEME="maran"
@@ -98,6 +98,7 @@ alias zsrc='source /home/sushant/.zshrc'
 alias axe='axel -n30 -a'
 alias PUB='git add .; echo -n "message? "; read msg; gcmsg $msg; ggpush'
 alias POW='please poweroff'
+alias htop='htop -C'
 
 #.dircolors.ansi-dark
 #.dircolors.ansi-dark
