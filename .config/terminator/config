@@ -65,7 +65,7 @@
     cursor_color = "#0f0f49499999"
     font = DejaVu Sans Mono for Powerline 13
     foreground_color = "#859900"
-    palette = "#2c2c2c:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#2d2d2d:#cb4b16:#586e75:#f5d605:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    palette = "#000000:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#3f3f3f:#cb4b16:#586e75:#f5d605:#839496:#6c71c4:#93a1a1:#fdf6e3"
     show_titlebar = False
     use_system_font = False
   [[test]]
