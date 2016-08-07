@@ -7,4 +7,4 @@ set t_Co=256
 colorscheme molokai
 hi Normal ctermbg=none
 hi NonText ctermbg=none
-hi Visual ctermbg=yellow
+hi Visual ctermbg=darkgray
