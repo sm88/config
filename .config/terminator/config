@@ -39,7 +39,7 @@
 [plugins]
 [profiles]
   [[default]]
-    background_darkness = 0.9
+    background_darkness = 0.82
     background_image = None
     background_type = transparent
     cursor_color = "#90908f"
@@ -49,7 +49,7 @@
     show_titlebar = False
     use_system_font = False
   [[dropdown]]
-    background_darkness = 0.9
+    background_darkness = 0.82
     background_image = None
     background_type = transparent
     cursor_color = "#90908f"
