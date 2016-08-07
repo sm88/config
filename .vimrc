@@ -6,6 +6,6 @@ set vb
 set t_Co=256
 set background=dark
 colorscheme solarized.orig
-"hi Normal ctermbg=none
+hi Normal ctermbg=none
 "hi NonText ctermbg=none
 "hi Visual ctermbg=darkgray
