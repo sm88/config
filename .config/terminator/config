@@ -48,6 +48,16 @@
     palette = "#073642:#dc322f:#859900:#b58900:#ffffff:#d33682:#2aa198:#eee8d5:#268bd2:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
     show_titlebar = False
     use_system_font = False
+  [[Base16 Monokai Dark]]
+    background_darkness = 0.9
+    background_image = None
+    background_type = transparent
+    cursor_color = "#f8f8f2"
+    font = DejaVu Sans Mono for Powerline 13
+    foreground_color = "#92ac03"
+    palette = "#000000:#f92672:#a6e22e:#f4bf75:#66d9ef:#ae81ff:#a1efe4:#f8f8f2:#75715e:#f92672:#a6e22e:#f4bf75:#66d9ef:#ae81ff:#a1efe4:#f9f8f5"
+    show_titlebar = False
+    use_system_font = False
   [[dropdown]]
     background_darkness = 0.9
     background_image = None
