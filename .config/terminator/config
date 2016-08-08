@@ -26,16 +26,35 @@
       type = Window
   [[dropdown]]
     [[[child0]]]
+      fullscreen = False
+      last_active_window = True
+      maximised = False
       order = 0
       parent = ""
-      position = 9:25
+      position = 0:25
       size = 1366, 562
+      title = sushant@zen3: ~
       type = Window
-    [[[terminal1]]]
+    [[[child1]]]
+      active_page = 1
+      labels = None, None
+      last_active_term = 08ca307b-66a4-4351-a6a5-4623d29fd542, b4207e92-8038-473d-a549-b5f156a7d60b
       order = 0
       parent = child0
-      profile = default
+      type = Notebook
+    [[[terminal2]]]
+      command = ranger
+      order = 0
+      parent = child1
+      profile = solar
       type = Terminal
+      uuid = 08ca307b-66a4-4351-a6a5-4623d29fd542
+    [[[terminal3]]]
+      order = 1
+      parent = child1
+      profile = solar
+      type = Terminal
+      uuid = b4207e92-8038-473d-a549-b5f156a7d60b
 [plugins]
 [profiles]
   [[default]]
