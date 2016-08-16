@@ -98,6 +98,7 @@ alias zsrc='source /home/sushant/.zshrc'
 alias axe='axel -n30 -a'
 alias PUB='git add .; echo -n "message? "; read msg; gcmsg $msg; ggpush'
 alias POW='please poweroff'
+alias vimrc='vim ~/.vimrc'
 #alias htop='htop -C'
 
 #.dircolors.ansi-dark
