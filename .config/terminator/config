@@ -71,7 +71,7 @@
     background_darkness = 0.9
     background_image = None
     background_type = transparent
-    cursor_color = "#90908f"
+    cursor_color = "#859900"
     cursor_shape = ibeam
     font = DejaVu Sans Mono for Powerline 13
     foreground_color = "#92ac03"
@@ -82,7 +82,7 @@
     background_darkness = 0.9
     background_image = None
     background_type = transparent
-    cursor_color = "#0f0f49499999"
+    cursor_color = "#859900"
     cursor_shape = ibeam
     font = DejaVu Sans Mono for Powerline 13
     foreground_color = "#859900"
@@ -93,6 +93,7 @@
     background_darkness = 0.92
     background_image = None
     background_type = transparent
+    cursor_color = "#859900"
     cursor_shape = ibeam
     font = DejaVu Sans Mono for Powerline 13
     foreground_color = "#00ff00"
