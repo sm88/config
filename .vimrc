@@ -11,5 +11,4 @@ set cursorline
 hi Normal ctermbg=none
 hi NonText ctermbg=none
 hi Visual ctermbg=darkblue ctermfg=black
-hi CursorLine cterm=none ctermbg=2 cterm=none ctermfg=black cterm=none
-hi Cursor cterm=bold ctermfg=2* ctermbg=2*
+hi CursorLine cterm=none ctermbg=black cterm=none
