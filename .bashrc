@@ -111,11 +111,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-alias APT='sudo apt-get update'
-alias APTU='sudo apt-get update && sudo apt-get -y upgrade'
-export PATH=$PATH:/home/sushant/android/platform-tools
-alias g++11="g++ -std=c++11"
-alias tmux2="tmux -2"
-alias vimx="vim '+set t_ut='"
-alias brain="python /opt/brainworkshop/brainworkshop.pyw"

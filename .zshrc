@@ -58,7 +58,7 @@ plugins=(git debian common-aliases sublime zsh-syntax-highlighting)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:/home/sushant/android/platform-tools:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -99,6 +99,7 @@ alias axe='axel -n30 -a'
 alias PUB='git add .; echo -n "message? "; read msg; gcmsg $msg; ggpush'
 alias POW='please poweroff'
 alias vimrc='vim ~/.vimrc'
+alias bashrc='vim ~/.bashrc'
 #alias htop='htop -C'
 
 #.dircolors.ansi-dark
