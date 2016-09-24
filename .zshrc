@@ -101,6 +101,8 @@ alias POW='please poweroff'
 alias REB='please reboot'
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
+alias mean='sdcv'
+alias fixNumix="sudo cp -v /usr/share/themes/Numix\ Daily/gtk-2.0/{gtkrc.bak,gtkrc}"
 #alias htop='htop -C'
 
 #.dircolors.ansi-dark
