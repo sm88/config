@@ -6,7 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] || [ "$TERM" = "linux" ]; then
-	ZSH_THEME="maran"
+	ZSH_THEME="maran2"
 else
 	export TERM="xterm-color"
 	ZSH_THEME="sushant"
