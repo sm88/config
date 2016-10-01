@@ -3,7 +3,6 @@
   geometry_hinting = False
   hide_from_taskbar = True
 [keybindings]
-  hide_window = F12
   split_horiz = <Primary><Shift>o
   split_vert = <Primary><Shift>e
   switch_to_tab_1 = <Alt>1
