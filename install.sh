@@ -40,4 +40,6 @@ if [[ $noop -eq 0 ]]; then
 	ln -sf ${repo}/.vim ${prefix}/.vim
 	ln -sf ${repo}/.config/terminator/config ${prefix}/.config/terminator/config
 	ln -sf ${repo}/.oh-my-zsh/themes/sushant.zsh-theme ${prefix}/.oh-my-zsh/themes/sushant.zsh-theme
+
+	ln -sf ${repo}/.oh-my-zsh/themes/maran2.zsh-theme ${prefix}/.oh-my-zsh/themes/maran2.zsh-theme
 fi
