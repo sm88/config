@@ -113,35 +113,44 @@ voldwidget = widget({ type = "textbox" })
 -- }}}sush widgets end
 -- {{{ sush widgets conf start
 --sushant conf widgets
-screendwidget.text="<span color='lightgreen'>-- Bright " .. awful.util.pread("xbacklight -get|cut -c -4") .."</span>"
-screenuwidget.text="<span color='lightgreen'>% ++ | </span>"
+screendwidget.text="<span color='lightgreen'>-- Bright [" .. awful.util.pread("xbacklight -get|cut -c -4") .."</span>"
+screenuwidget.text="<span color='lightgreen'>%] ++ | </span>"
 
 voldwidget.text="<span color='lightgreen'>-- </span>"
 voluwidget.text="<span color='lightgreen'> ++ | </span>"
-volmwidget.text="<span color='lightgreen'>Vol " .. awful.util.pread("amixer sget 'Master'|grep -oE '[0-9]+%'|head -1") .. "</span>"
+volmwidget.text="<span color='lightgreen'>Vol " .. awful.util.pread("amixer sget 'Master'|grep -Eo '[[0-9]+%.*'|head -1") .. "</span>"
 
-function changeVolText ()
-	volmwidget.text="<span color='lightgreen'>Vol " .. awful.util.pread("amixer sget 'Master'|grep -oE '[0-9]+%'|head -1") .. "</span>"
+function volUp ()
+	awful.util.spawn("amixer sset 'Master' 5%+")
+	volmwidget.text="<span color='lightgreen'>Vol " .. awful.util.pread("amixer sget 'Master'|grep -Eo '[[0-9]+%.*'|head -1") .. "</span>"
 end
 
-function changeBrightText ()
-	screendwidget.text="<span color='lightgreen'>-- Bright " .. awful.util.pread("xbacklight -get|cut -c -4") .."</span>"
+function volDown()
+	awful.util.spawn("amixer sset 'Master' 5%-")
+	volmwidget.text="<span color='lightgreen'>Vol " .. awful.util.pread("amixer sget 'Master'|grep -Eo '[[0-9]+%.*'|head -1") .. "</span>"
 end
 
-screendwidget:buttons(awful.util.table.join(awful.button({ }, 1, 
-function () 
-	awful.util.spawn("xbacklight -dec 5")
-	changeBrightText()
-end)))
-screenuwidget:buttons(awful.util.table.join(awful.button({ }, 1, 
-function () 
+function volMute()
+	awful.util.spawn("amixer sset 'Master' 1+ toggle")
+	volmwidget.text="<span color='lightgreen'>Vol " .. awful.util.pread("amixer sget 'Master'|grep -Eo '[[0-9]+%.*'|head -1") .. "</span>"
+end
+
+function brightUp ()
 	awful.util.spawn("xbacklight -inc 5")
-	changeBrightText()
-end)))
+	screendwidget.text="<span color='lightgreen'>-- Bright [" .. awful.util.pread("xbacklight -get|cut -c -4") .."%]</span>"
+end
 
-voluwidget:buttons(awful.util.table.join(awful.button({ }, 1, function () awful.util.spawn("amixer sset 'Master' 5%+") changeVolText() end)))
-volmwidget:buttons(awful.util.table.join(awful.button({ }, 1, function () awful.util.spawn("amixer sset 'Master' 1+ toggle") changeVolText() end)))
-voldwidget:buttons(awful.util.table.join(awful.button({ }, 1, function () awful.util.spawn("amixer sset 'Master' 5%-") changeVolText() end)))
+function brightDown()
+	awful.util.spawn("xbacklight -dec 5")
+	screendwidget.text="<span color='lightgreen'>-- Bright [" .. awful.util.pread("xbacklight -get|cut -c -4") .."%]</span>"
+end
+
+screendwidget:buttons(awful.util.table.join(awful.button({ }, 1, brightDown)))
+screenuwidget:buttons(awful.util.table.join(awful.button({ }, 1, brightUp))) 
+
+voluwidget:buttons(awful.util.table.join(awful.button({ }, 1, volUp)))
+volmwidget:buttons(awful.util.table.join(awful.button({ }, 1, volMute)))
+voldwidget:buttons(awful.util.table.join(awful.button({ }, 1, volDown))) 
 -- }}}
 --sushant conf end
 mytextclock = awful.widget.textclock({ align = "right" })
@@ -310,7 +319,12 @@ globalkeys = awful.util.table.join(
                   mypromptbox[mouse.screen].widget,
                   awful.util.eval, nil,
                   awful.util.getdir("cache") .. "/history_eval")
-              end)
+			  end),
+
+	--volume and brightness keys
+	awful.key({ }, "XF86AudioRaiseVolume", volUp),
+	awful.key({ }, "XF86AudioLowerVolume", volDown),
+	awful.key({ }, "XF86AudioMute", volMute)
 )
 
 clientkeys = awful.util.table.join(
