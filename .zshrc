@@ -89,9 +89,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-alias APT='sudo zypper update'
-alias APTU='sudo zypper update && sudo zypper -y upgrade'
-alias AP='sudo zypper'
+alias APT='sudo apt-get update'
+alias APTU='sudo apt-get update && sudo apt-get -y upgrade'
+alias AP='sudo apt-get'
 alias g++11="g++ -std=c++11"
 alias tmux2="tmux -2"
 alias vimx="vim '+set t_ut='"
