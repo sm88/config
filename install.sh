@@ -27,7 +27,7 @@ done
 
 for i in $(ls -a)
 do
-	[[ "$i" = "install.sh" || "$i" = ".gitignore" || ! -f "$i" || -e "${prefix}/$i" ]] && continue
+	[[ "$i" = "install.sh" || "$i" = ".gitignore" || ! -f "$i" || -e "${prefix}/$i" || "$i" == "README.md"]] && continue
 	echo "${prefix}/$i -> ${repo}/$i";
 	[[ $noop -eq 0 ]] && ln -sf ${repo}/$i ${prefix}/$i;
 done
@@ -42,4 +42,5 @@ if [[ $noop -eq 0 ]]; then
 	ln -sf ${repo}/.oh-my-zsh/themes/sushant.zsh-theme ${prefix}/.oh-my-zsh/themes/sushant.zsh-theme
 
 	ln -sf ${repo}/.oh-my-zsh/themes/maran2.zsh-theme ${prefix}/.oh-my-zsh/themes/maran2.zsh-theme
+	tar -xvf ${repo}/stardict.tgz -C ${prefix}
 fi
