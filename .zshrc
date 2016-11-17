@@ -113,3 +113,4 @@ eval `dircolors ~/.dircolors`
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 autoload -Uz compinit
 compinit -u
+setopt extended_glob
