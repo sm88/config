@@ -104,6 +104,11 @@ alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
 alias mean='sdcv'
 alias fixNumix="sudo cp -v /usr/share/themes/Numix\ Daily/gtk-2.0/{gtkrc.bak,gtkrc}"
+alias cdA='cd ~/.config/awesome/'
+alias awerc='vim ~/.config/awesome/rc.lua'
+alias cdI='cd ~/.config/i3/'
+alias i3rc='vim ~/.config/i3/config'
+
 #alias htop='htop -C'
 
 #.dircolors.ansi-dark
