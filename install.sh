@@ -37,10 +37,14 @@ echo "${prefix}/.config/terminator/config -> ${repo}/.config/terminator/config"
 echo "${prefix}/.oh-my-zsh/themes/sushant.zsh-theme ${repo}/.oh-my-zsh/themes/sushant.zsh-theme"
 
 if [[ $noop -eq 0 ]]; then
+	mkdir -p ${prefix}/.config/{terminator,i3}
 	ln -sf ${repo}/.vim ${prefix}/.vim
 	ln -sf ${repo}/.config/terminator/config ${prefix}/.config/terminator/config
 	ln -sf ${repo}/.oh-my-zsh/themes/sushant.zsh-theme ${prefix}/.oh-my-zsh/themes/sushant.zsh-theme
 
 	ln -sf ${repo}/.oh-my-zsh/themes/maran2.zsh-theme ${prefix}/.oh-my-zsh/themes/maran2.zsh-theme
+
+	ln -sf ${repo}/.config/i3/config ${prefix}/.config/i3/config
+	ln -sf ${repo}/i3status.conf ${prefix}/i3status.conf
 	tar -xvf ${repo}/stardict.tgz -C ${prefix}
 fi
