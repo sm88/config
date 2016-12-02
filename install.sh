@@ -45,6 +45,6 @@ if [[ $noop -eq 0 ]]; then
 	ln -sf ${repo}/.oh-my-zsh/themes/maran2.zsh-theme ${prefix}/.oh-my-zsh/themes/maran2.zsh-theme
 
 	ln -sf ${repo}/.config/i3/config ${prefix}/.config/i3/config
-	ln -sf ${repo}/i3status.conf ${prefix}/i3status.conf
+	ln -sf ${repo}/.i3status.conf ${prefix}/.i3status.conf
 	tar -xvf ${repo}/stardict.tgz -C ${prefix}
 fi
