@@ -108,7 +108,8 @@ alias cdA='cd ~/.config/awesome/'
 alias awerc='vim ~/.config/awesome/rc.lua'
 alias cdI='cd ~/.config/i3/'
 alias i3rc='vim ~/.config/i3/config'
-alias cdBr='cd /sys/class/backlight/intel_backlight'
+alias IB='bash ~/programs/bash/bright.sh'
+alias DB='bash ~/programs/bash/bright.sh 1'
 
 #alias htop='htop -C'
 
