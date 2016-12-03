@@ -169,6 +169,9 @@ bar {
 	status_command i3status
 }
 
+#class			border  backgr. text    indicator
+client.focused	#2d2d2d	#2d2d2d	#859900	#859900
+
 #start applications
 exec nm-applet
 exec fluxgui
