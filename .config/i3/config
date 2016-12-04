@@ -170,7 +170,7 @@ bar {
 }
 
 #class			border  backgr. text    indicator
-client.focused	#2d2d2d	#2d2d2d	#859900	#859900
+client.focused	#000000	#000000	#00ff00	#2d2d2d
 
 #start applications
 exec nm-applet
