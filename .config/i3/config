@@ -155,6 +155,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+
 bindsym XF86AudioLowerVolume exec amixer sset Master 5%-
 bindsym XF86AudioMute exec amixer sset Master toggle
+bindsym $mod+Shift+x exec bash /home/sushant/programs/bash/locker.sh 5 /home/sushant/Pictures/Debianlock.png
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
