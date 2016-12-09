@@ -1,6 +1,5 @@
 [global_config]
   focus = system
-  geometry_hinting = False
   hide_from_taskbar = True
 [keybindings]
   hide_window = F12
@@ -59,18 +58,16 @@
 [profiles]
   [[default]]
     background_darkness = 0.9
-    background_image = None
     background_type = transparent
     cursor_color = "#90908f"
     font = DejaVu Sans Mono for Powerline 11
     foreground_color = "#92ac03"
     palette = "#073642:#dc322f:#859900:#b58900:#ffffff:#d33682:#2aa198:#eee8d5:#268bd2:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
-    scrollbar_position = disabled
+    scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
   [[dropdown]]
     background_darkness = 0.9
-    background_image = None
     background_type = transparent
     cursor_color = "#859900"
     font = DejaVu Sans Mono for Powerline 11
@@ -81,7 +78,6 @@
     use_system_font = False
   [[solar]]
     background_darkness = 0.9
-    background_image = None
     background_type = transparent
     cursor_color = "#859900"
     font = DejaVu Sans Mono for Powerline 11
@@ -92,7 +88,6 @@
     use_system_font = False
   [[test]]
     background_darkness = 0.92
-    background_image = None
     background_type = transparent
     cursor_color = "#859900"
     font = DejaVu Sans Mono for Powerline 11

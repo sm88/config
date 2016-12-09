@@ -27,7 +27,7 @@ done
 
 for i in $(ls -a)
 do
-	[[ "$i" = "install.sh" || "$i" = ".gitignore" || ! -f "$i" || -e "${prefix}/$i" || "$i" == "README.md"]] && continue
+	[[ "$i" = "install.sh" || "$i" = ".gitignore" || ! -f "$i" || -e "${prefix}/$i" || "$i" == "README.md" ]] && continue
 	echo "${prefix}/$i -> ${repo}/$i";
 	[[ $noop -eq 0 ]] && ln -sf ${repo}/$i ${prefix}/$i;
 done

@@ -184,4 +184,5 @@ client.focused	#000000	#000000	#00ff00	#2d2d2d
 #start applications
 exec nm-applet
 exec fluxgui
-exec feh --bg-scale ~/Pictures/debian-logo.jpg
+exec feh --bg-scale ~/Pictures/pKUVn28.png
+exec bash /home/sushant/programs/bash/compositer.sh
