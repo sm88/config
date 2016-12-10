@@ -59,6 +59,9 @@ plugins=(git debian common-aliases sublime zsh-syntax-highlighting)
 
 # User configuration
 
+export GOROOT=/opt/go
+export GOPATH=~/programs/gocode
+export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
