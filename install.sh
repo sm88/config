@@ -46,5 +46,6 @@ if [[ $noop -eq 0 ]]; then
 
 	ln -sf ${repo}/.config/i3/config ${prefix}/.config/i3/config
 	ln -sf ${repo}/.i3status.conf ${prefix}/.i3status.conf
+	wget 'https://www.dropbox.com/s/f293v4w310inrut/stardict.tgz?dl=0' -O stardict.tgz
 	tar -xvf ${repo}/stardict.tgz -C ${prefix}
 fi
